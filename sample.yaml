@@ -1,7 +1,7 @@
 AWSTemplateFormatVersion: 2010-09-09
 Description: Deploy a API service into an ECS cluster behind a private load balancer.
 Parameters:
-   CodeKey:
+  CodeKey:
     Type: String
     Default: aws-kinesis-analytics-java-apps-1.0.jar
   
@@ -22,7 +22,7 @@ Resources:
 Outputs:
   MyOutput:
     Value: !Ref ImageUrl
-     env:
+  env:
     Value: !Ref Environment
-  CodeKey
+  CodeKey:
     Value: !Ref CodeKey
